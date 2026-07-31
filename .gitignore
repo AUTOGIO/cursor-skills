@@ -1,0 +1,10 @@
+# Local backups / noise
+*.backup-*
+*.bak
+.DS_Store
+**/.DS_Store
+
+# Transient local dumps (reports live under ~/Reports)
+*.log
+tmp/
+.cache/

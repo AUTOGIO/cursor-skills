@@ -38,7 +38,7 @@ Applies to all audit and diagnostic skills in this library unless a skill explic
 
 A skill may create only its declared report files under the shared Reports root (or a user-supplied absolute override), as defined in [output-policy.md](output-policy.md).
 
-- Default root: `/Users/eduardofgiovannini/Reports`
+- Default root: `/Users/giovannini.eduardogmail.com/Reports`
 - Do not write reports to repository root, `$HOME`, or cwd by default
 - Do not create speculative infrastructure, unrelated docs, or “helpful” side files
 - Implementation mode requires explicit user authorization for that skill

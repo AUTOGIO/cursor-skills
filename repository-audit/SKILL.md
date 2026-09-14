@@ -32,7 +32,7 @@ Architecture, security, correctness, reliability, dependencies, tests, documenta
 Create **only** a new timestamped report per [output-policy.md](../_shared/references/output-policy.md):
 
 ```text
-/Users/eduardofgiovannini/Reports/RepositoryAudits/repository_audit_<repo-slug>_YYYY-MM-DD_HH-MM-SS.md
+/Users/giovannini.eduardogmail.com/Reports/RepositoryAudits/repository_audit_<repo-slug>_YYYY-MM-DD_HH-MM-SS.md
 ```
 
 Do not write to the repository root, `$HOME`, or cwd by default. User may override with an absolute path.

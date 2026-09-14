@@ -5,7 +5,7 @@ All Cursor audit and diagnostic skills write reports under a single root unless 
 ## Reports Root
 
 ```text
-/Users/eduardofgiovannini/Reports
+/Users/giovannini.eduardogmail.com/Reports
 ```
 
 ## Folder Map
@@ -36,6 +36,6 @@ For `repository-audit`, `<repo-slug>` is the sanitized basename of the audited r
 ## Examples
 
 ```text
-/Users/eduardofgiovannini/Reports/SystemHealth/system_health_2026-07-31_11-43-00.md
-/Users/eduardofgiovannini/Reports/RepositoryAudits/repository_audit_ItaliaOS_2026-07-31_11-20-00.md
+/Users/giovannini.eduardogmail.com/Reports/SystemHealth/system_health_2026-07-31_11-43-00.md
+/Users/giovannini.eduardogmail.com/Reports/RepositoryAudits/repository_audit_ItaliaOS_2026-07-31_11-20-00.md
 ```

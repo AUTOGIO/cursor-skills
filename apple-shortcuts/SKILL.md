@@ -49,7 +49,7 @@ Usually **no report file** — answer in chat with commands and results.
 Optional session note only if the user asks to log the run:
 
 ```text
-/Users/eduardofgiovannini/Reports/WorkSessions/shortcuts_<slug>_YYYY-MM-DD_HH-MM-SS.md
+/Users/giovannini.eduardogmail.com/Reports/WorkSessions/shortcuts_<slug>_YYYY-MM-DD_HH-MM-SS.md
 ```
 
 Follow [output-policy.md](../_shared/references/output-policy.md) for folder rules.
@@ -145,9 +145,10 @@ Short completion summary:
 | Desktop Commander layout | `DESKTOP_COMMANDER` | Spencer layout |
 | Cleanup layout | `CLEANUP` (**confirm**) | Spencer layout |
 | Open Cursor Atlas | `Open_Cursor_A.tlas` | — |
-| Stream Deck start workspace | `SD-Start-Workspace` | `$HOME/Automation/stream-deck-operations/scripts/start-workspace.zsh` |
-| Open finance project | `SD-Open-Finance-Project` | `…/scripts/open-finance-project.zsh` |
-| Backup today’s reports | `SD-Backup-Todays-Reports` (**confirm**) | `…/scripts/backup-todays-reports.zsh` |
+| Stream Deck start workspace | `SD-Start-Workspace` | Live Shortcut first; zsh only if `Automation/stream-deck-operations/` exists |
+| Open finance project | `SD-Open-Finance-Project` | Live Shortcut first |
+| Backup today’s reports | `SD-Backup-Todays-Reports` (**confirm**) | Live Shortcut first; confirm before archives |
+| Local Spencer desk restore | — | `/Users/giovannini.eduardogmail.com/Automation/spencer/restore_*.sh` |
 
 ### Ops / network
 
@@ -172,9 +173,10 @@ See full catalog notes in [references/library.md](references/library.md).
 The agent **cannot** compile a new shortcut graph via CLI. When the user needs a new one:
 
 1. Write a clear recipe: name, actions, shell body with **absolute paths**
-2. Point to generators when they exist:
-   - `$HOME/Automation/stream-deck-operations/scripts/install-shortcuts.zsh`
-   - `Documents/GitHub/ipad-stream-deck-console` Spencer install/paste scripts
+2. Point to generators only when those projects exist on this Mac:
+   - `$HOME/Automation/stream-deck-operations/scripts/install-shortcuts.zsh` (currently missing)
+   - `$HOME/Documents/GitHub/ipad-stream-deck-console` Spencer install/paste scripts (currently missing)
+   - Local desk restores: `$HOME/Automation/spencer/restore_*.sh`
 3. After the user clicks **Add Shortcut**, verify:
 
 ```zsh
@@ -200,7 +202,7 @@ Signing an exported file:
 | Hangs / waits | Shortcut may show a dialog — user must click; or run underlying zsh with `SD_SKIP_DIALOGS=1` when supported |
 | Permission errors | System Settings → Privacy & Security → Automation / Accessibility / Documents |
 | Spencer layouts fail | Spencer.app installed; CLI ready loop in [library.md](references/library.md) |
-| Stream Deck button no-op | Prefer `.command` launcher under `Automation/stream-deck-operations/launchers/` |
+| Stream Deck button no-op | Prefer live `shortcuts run`; if ops repo is restored, use its `launchers/` `.command` files |
 
 ## Examples
 
@@ -213,7 +215,7 @@ Signing an exported file:
 
 **User:** “Add a Shortcut that opens Reports”
 
-1. Provide Shortcuts.app recipe (Open Folder → `/Users/eduardofgiovannini/Reports`)
+1. Provide Shortcuts.app recipe (Open Folder → `/Users/giovannini.eduardogmail.com/Reports`)
 2. Suggest name `Open-Reports-Root`
 3. After user creates it, verify with `list` + `run`
 
@@ -227,5 +229,6 @@ Signing an exported file:
 
 - [CLI reference](references/cli.md)
 - [Library map (this Mac)](references/library.md)
-- Stream Deck ops: `/Users/eduardofgiovannini/Automation/stream-deck-operations/`
-- Spencer shortcuts docs: `/Users/eduardofgiovannini/Documents/GitHub/ipad-stream-deck-console/shortcuts/`
+- Spencer local restores: `/Users/giovannini.eduardogmail.com/Automation/spencer/`
+- Stream Deck ops (if restored): `/Users/giovannini.eduardogmail.com/Automation/stream-deck-operations/`
+- iPad Stream Deck console (if restored): `/Users/giovannini.eduardogmail.com/Documents/GitHub/ipad-stream-deck-console/`

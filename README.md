@@ -20,8 +20,16 @@ Shared policies/templates live in `_shared/` (not invokable).
 
 ## Reports
 
-Default report root: `/Users/eduardofgiovannini/Reports` (see `_shared/references/output-policy.md`).
+Default report root: `/Users/giovannini.eduardogmail.com/Reports` (see `_shared/references/output-policy.md`).
+
+Folder map: `SystemHealth/`, `RepositoryAudits/`, `WorkSessions/` (plus legacy `MacHealthOS/` — Cursor skills must not write there).
 
 ## Sync
 
-Clone or pull into `~/.cursor/skills` on another Mac. Keep this repository **private**.
+This repository is the source of truth. After edits, sync into the live Cursor load path:
+
+```text
+~/.cursor/skills/
+```
+
+Keep this repository **private**.

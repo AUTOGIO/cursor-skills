@@ -39,7 +39,7 @@ Do **not**:
 Create **only** a new timestamped report per [output-policy.md](../_shared/references/output-policy.md):
 
 ```text
-/Users/eduardofgiovannini/Reports/SystemHealth/system_health_YYYY-MM-DD_HH-MM-SS.md
+/Users/giovannini.eduardogmail.com/Reports/SystemHealth/system_health_YYYY-MM-DD_HH-MM-SS.md
 ```
 
 Do not write to cwd, `$HOME`, or `MacHealthOS/` by default. User may override with an absolute path.

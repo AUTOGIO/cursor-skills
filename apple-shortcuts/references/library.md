@@ -1,19 +1,22 @@
 # Shortcut library map (this Mac)
 
 > Snapshot aid only. **Always** re-run `shortcuts list` before executing.  
-> Last curated: 2026-07-31
+> Last curated: 2026-09-05 (paths updated for this Mac account)
 
 ## Naming drift
 
 Documented / generated names sometimes use an em dash (`SD — Start Workspace`) while the live library uses hyphens (`SD-Start-Workspace`). **Trust live `list`.**
 
-Related project roots:
+Related project roots (this Mac):
 
-| Project | Path |
-|---|---|
-| Stream Deck operations | `/Users/eduardofgiovannini/Automation/stream-deck-operations/` |
-| iPad Stream Deck console (Spencer) | `/Users/eduardofgiovannini/Documents/GitHub/ipad-stream-deck-console/` |
-| Reports root | `/Users/eduardofgiovannini/Reports/` |
+| Project | Path | Status |
+|---|---|---|
+| Reports root | `/Users/giovannini.eduardogmail.com/Reports/` | Present |
+| Spencer desk restores (local) | `/Users/giovannini.eduardogmail.com/Automation/spencer/` | Present (`restore_*.sh`) |
+| Stream Deck operations | `/Users/giovannini.eduardogmail.com/Automation/stream-deck-operations/` | **Missing** on this account — do not invent scripts; use live Shortcuts or ask before recreating |
+| iPad Stream Deck console | `/Users/giovannini.eduardogmail.com/Documents/GitHub/ipad-stream-deck-console/` | **Missing** on this account — legacy docs may still mention it |
+
+When a referenced project folder is missing, prefer `shortcuts list` / `shortcuts run` and the local Spencer restores above. Do not assume `/Users/eduardofgiovannini/...` paths exist.
 
 ## Live inventory (2026-07-31)
 
@@ -23,9 +26,9 @@ Grouped from `shortcuts list` (39 names).
 
 | Live name | Likely script | Risk |
 |---|---|---|
-| `SD-Backup-Todays-Reports` | `Automation/stream-deck-operations/scripts/backup-todays-reports.zsh` | Confirm (writes archives) |
-| `SD-Open-Finance-Project` | `…/open-finance-project.zsh` | Low |
-| `SD-Start-Workspace` | `…/start-workspace.zsh` | Low |
+| `SD-Backup-Todays-Reports` | Prefer live Shortcut; underlying zsh only if `Automation/stream-deck-operations/` is restored | Confirm (writes archives) |
+| `SD-Open-Finance-Project` | Prefer live Shortcut | Low |
+| `SD-Start-Workspace` | Prefer live Shortcut | Low |
 
 Docs also mention (create if missing): `SD — Capture Idea`, `SD — System Health Check` (or hyphen variants).
 
@@ -103,9 +106,9 @@ open -a Spencer
 ## Preferred agent strategy
 
 1. Match user phrase → table above → **live** name.
-2. If Stream Deck ops: prefer `Automation/stream-deck-operations/scripts/*.zsh` for logging.
-3. If Spencer layout: prefer Spencer CLI when Shortcut is missing or stubbed (`Hello World`).
-4. If health report for Cursor skills: use `/macos-health-check` → `~/Reports/SystemHealth/`.
+2. If Stream Deck ops: run the live Shortcut; only call `Automation/stream-deck-operations/scripts/*.zsh` when that folder exists.
+3. If Spencer layout: prefer Spencer CLI or `/Users/giovannini.eduardogmail.com/Automation/spencer/restore_*.sh` when Shortcut is missing or stubbed.
+4. If health report for Cursor skills: use `/macos-health-check` → `/Users/giovannini.eduardogmail.com/Reports/SystemHealth/`.
 
 ## Refreshing this file
 

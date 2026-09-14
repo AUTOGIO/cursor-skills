@@ -10,7 +10,7 @@
 All future skill reports default to:
 
 ```text
-/Users/eduardofgiovannini/Reports/
+/Users/giovannini.eduardogmail.com/Reports/
 ├── SystemHealth/       # macos-health-check → system_health_YYYY-MM-DD_HH-MM-SS.md
 ├── RepositoryAudits/   # repository-audit → repository_audit_<repo-slug>_YYYY-MM-DD_HH-MM-SS.md
 ├── MacHealthOS/        # legacy other tooling — Cursor skills must not write here
